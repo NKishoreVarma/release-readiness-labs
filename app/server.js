@@ -10,6 +10,6 @@ app.get('/health', (req, res) => {
   res.status(200).json({ status: 'ok', version: process.env.npm_package_version });
 });
 
-app.listen(port, () => {
+app.listen(PORT, () => {
   console.log(`Server listening on port ${port}`);
 });
